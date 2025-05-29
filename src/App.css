@@ -3,3 +3,113 @@
   font-size: 1rem;
   color: black;
 }
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* AddTask */
+.add-task {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.add-task button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #137eed;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-task button:hover {
+  background-color: #126ccc;
+}
+
+/* Task */
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.task span {
+  flex: 1;
+  overflow-wrap: break-word;
+}
+
+.task span.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.task button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  background: none;
+}
+
+/* FilterButtons */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.filters button {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+/* Counter */
+.counter {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}

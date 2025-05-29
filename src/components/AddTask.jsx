@@ -4,7 +4,7 @@ export default function AddTask({onAddTask}){
     const [task, setTask] = useState('')
 
    return (
-    <div>
+    <div className="add-task">
         <input 
             type="text" 
             placeholder="Add a new Task..." 
