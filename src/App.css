@@ -102,9 +102,9 @@ h1 {
 }
 
 .filters button.active {
-  background-color: #4caf50;
+  background-color: #137eed;
   color: white;
-  border-color: #4caf50;
+  border-color: #137eed;
 }
 
 /* Counter */

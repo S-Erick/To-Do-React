@@ -1,6 +1,6 @@
 import Task from "./Task"
 
-export default function TaskList({ list, onDeleteTask }){
+export default function TaskList({ list, onDeleteTask, onToggleTask }){
     return (
         <div>
             {list.map(task => (
@@ -8,9 +8,11 @@ export default function TaskList({ list, onDeleteTask }){
                     key={task.id}
                     id={task.id}
                     name={task.name}
+                    completed={task.completed}
                     onDelete={onDeleteTask}
+                    onToggle={onToggleTask}
                 />
             ))}
         </div>
     )
-}
+}   

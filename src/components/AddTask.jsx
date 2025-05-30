@@ -11,12 +11,11 @@ export default function AddTask({onAddTask}){
             value={task}
             onChange={(e) => setTask(e.target.value)} 
         />
-        <button 
-            onClick={() => {
-                onAddTask(task)
-                setTask('')
-            }}
-        >Add Task</button>
+        <button onClick={() => {
+            onAddTask(task)
+            setTask('')
+        }}>Add Task
+        </button>
     </div>
    ) 
 }
